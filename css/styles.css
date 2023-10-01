@@ -2,6 +2,7 @@
   --IRIS: #4d5ae5;
   --NAVY-BLUE: #2e2f42;
   --SLATE: #434455;
+  --OCEAN: #404bbf;
 }
 .body {
   font-family: "Roboto", sans-serif;
@@ -15,7 +16,6 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: 800;
-  font-style: normal;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
@@ -24,16 +24,20 @@
   color: var(--IRIS);
   font-family: Raleway;
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
-  line-height: 21px; /* 116.667% */
+  line-height: 21px;
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
 
+ul {
+  padding-left: 0;
+}
 /* heading-1 */
 section.effective {
   background-color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 h1 {
@@ -41,7 +45,6 @@ h1 {
   font-size: 56px;
   text-align: center;
   color: white;
-  font-style: normal;
   font-weight: 700;
   line-height: 60px;
   letter-spacing: 1.12px;
@@ -70,8 +73,12 @@ button {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  font-style: normal;
   letter-spacing: 0.32px;
+}
+
+.studio:hover,
+.studio:focus {
+  color: var(--OCEAN);
 }
 
 .main-header-link-portfolio {
@@ -85,7 +92,6 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  font-style: normal;
   letter-spacing: 0.32px;
 }
 
@@ -100,7 +106,6 @@ button {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  font-style: normal;
   letter-spacing: 0.32px;
 }
 .main-header-phone-item {
@@ -126,7 +131,6 @@ button {
   color: var(--SLATE);
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -173,6 +177,7 @@ button {
 }
 
 /* what we do-images */
+
 .rectangle1 {
   list-style-type: none;
   flex-direction: column;
@@ -206,7 +211,6 @@ button {
 .mark-fullname {
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -229,7 +233,6 @@ button {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -238,7 +241,6 @@ button {
   color: var(--SLATE);
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -252,7 +254,6 @@ button {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -262,7 +263,6 @@ button {
   color: var(--SLATE);
   font-family: Roboto;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
@@ -277,7 +277,6 @@ button {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
@@ -304,4 +303,35 @@ footer.logo {
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
+}
+
+.main-header-link-studio {
+  display: inline-block;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.main-header-link-portfolio {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.main-header-link-contacts {
+  display: inline-block;
+  align-items: flex-start;
+  gap: 40px;
+  justify-content: space-between;
+  width: 800px;
+}
+
+.main-header-phone-item {
+  display: inline-block;
+}
+
+.main-header-email-item {
+  display: inline-block;
+}
+
+.main-header-container {
+  display: inline-block;
 }
