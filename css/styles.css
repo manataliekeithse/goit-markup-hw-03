@@ -18,6 +18,7 @@
   font-weight: 800;
   letter-spacing: 0.54px;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo span {
@@ -68,12 +69,27 @@ button {
 
 .container .d-flex {
   display: flex;
+  align-items: center;
 }
 
 .d-flex {
   display: flex;
+  align-items: center;
 }
 
+.header {
+  justify-content: space-around;
+  align-items: center;
+}
+.header .d-flex {
+  align-items: center;
+  gap: 40px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /* services */
 .main-header-link-studio {
   list-style-type: none;
@@ -150,9 +166,22 @@ button {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
+.header .list {
+  gap: 40px;
+}
 
 .list {
   display: flex;
+  gap: 40px;
+  justify-content: center;
+
+}
+
+.list-section {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
 }
 .services {
   text-align: center;
@@ -178,25 +207,32 @@ button {
 .strategy {
   list-style-type: none;
   font-family: Roboto;
+  margin-left: 150px;
+  margin-right: 24px;
 }
 
 .punctuality {
   list-style-type: none;
   font-family: Roboto;
+  margin-right: 24px;
 }
 
 .diligence {
   list-style-type: none;
   font-family: Roboto;
+  margin-right: 24px
 }
 
 .technologies {
   list-style-type: none;
   font-family: Roboto;
+  margin-right: 156px;
 }
 
 /* what we do-images */
-
+.section {
+  justify-content: center;
+}
 .rectangle1 {
   list-style-type: none;
   flex-direction: column;
@@ -225,13 +261,24 @@ button {
 }
 
 /* team-members */
+.team-section {
+  background-color: #F4F4FD;
+  padding-top: 120px;
+  padding-bottom: 120px;
 
+}
 .team-members {
   display: flex;
+  justify-content: center;
+   
 }
 .mark {
   list-style-type: none;
-  width: 264px;
+  justify-content: center;
+   border-radius: 0px 0px 4px 4px;
+   margin-right: 24px;
+   background: var(--WHITE, #FFF);
+   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .mark-fullname {
@@ -241,6 +288,7 @@ button {
   line-height: 24px;
   letter-spacing: 0.4px;
   color: var(--NAVY-BLUE);
+  text-align: center;
 }
 
 .designer {
@@ -250,11 +298,20 @@ button {
   font-weight: 400;
   letter-spacing: 0.32px;
   color: var(--SLATE);
+  text-align: center ;
 }
 .tom {
   list-style-type: none;
-  width: 264px;
+  align-items: center;
+  margin-right: 24px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--WHITE, #FFF);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
 }
+
 .tom-fullname {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
@@ -273,7 +330,12 @@ button {
 }
 .camila {
   list-style-type: none;
-  width: 264px;
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 24px;
+  justify-content: center;
+  text-align: center;
+  background: var(--WHITE, #FFF);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .camila-fullname {
@@ -296,7 +358,12 @@ button {
 
 .daniel {
   list-style-type: none;
-  width: 264px;
+   border-radius: 0px 0px 4px 4px;
+   margin-right: 24px;
+   text-align: center;
+   justify-content: center;
+background: var(--WHITE, #FFF);
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .daniel-fullname {
@@ -321,6 +388,11 @@ footer.logo {
   font-family: Raleway;
   background-color: var(--NAVY-BLUE);
   color: #f4f4fd;
+  width: 535px;
+  padding-top: 140px;
+  padding-left: 156px;
+  padding-right: 500px;
+  padding-bottom: 100px;
 }
 
 .footer-desc {
@@ -347,8 +419,6 @@ footer.logo {
   align-items: flex-start;
   gap: 40px;
   justify-content: space-between;
-  width: 800px;
-}
 
 .main-header-phone-item {
   display: inline-block;
